@@ -155,7 +155,8 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
-
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       to right,
       rgb(46, 47, 66, 0.7),
@@ -165,6 +166,8 @@ img {
   background-size: cover;
   background-position: center;
   background-color: var(--hero-footer-background-color);
+  width: 1440px;
+  background-repeat: no-repeat;
 }
 .hero-text {
   margin-top: 0;
@@ -241,7 +244,7 @@ img {
 
 .relevance {
   margin-right: 24px;
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .relevance last-child {
   margin-right: 0px;
@@ -249,12 +252,12 @@ img {
 
 /* svg-images */
 .relevance-images {
-  width: 264px;
   height: 112px;
+  margin-bottom: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4fd;
+  background-color: var(--about-background-color);
   border-radius: 4px;
 }
 
@@ -356,12 +359,11 @@ img {
 /* Посилання на соціальні сіті */
 .team-card-social-links {
   display: flex;
-  margin: 0;
-  padding-top: 8px;
 
-  flex-direction: row;
+  margin-top: 8px;
+
   justify-content: center;
-  align-items: center;
+
   gap: 24px;
   list-style: none;
 }
@@ -372,22 +374,18 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
 }
 .team-card-link.social-link {
-  color: #551a8b;
   background-color: #4d5ae5;
 }
 
 .team-card-link.social-link:hover,
 .team-card-link.social-link:focus {
-  background-color: #31d0aa;
+  background-color: var(--btn-background-color);
 }
 /* секція лого-линк */
 .section-customers {
-  margin: 0;
+  padding-bottom: 120px;
 }
 .customers {
   font-weight: 700;
@@ -402,23 +400,24 @@ img {
 }
 .customers-list {
   display: flex;
-  margin: 0;
-  padding-bottom: 120px;
-  flex-direction: row;
 
-  align-items: flex-start;
   gap: 24px;
   list-style: none;
 }
+.our-customers {
+  width: calc((100% - 96px) / 6);
+}
+.our-customers last-child {
+  margin-right: 0px;
+}
 
 .customers-image {
-  width: 168px;
   height: 88px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid #8e8f99;
+  border: 1px solid #8e8f99;
   color: #8e8f99;
 
   border-radius: 4px;
@@ -426,8 +425,7 @@ img {
 }
 .customers-image:hover,
 .customers-image:focus {
-  outline: 1px solid;
-  border-radius: var(--btn-background-color) 4px;
+  border-color: var(--btn-background-color);
   color: var(--btn-background-color);
 }
 .customers-icon {
@@ -461,12 +459,10 @@ img {
   display: flex;
 }
 .footer-social-list-links > p {
-  margin: 0;
-  padding: 0;
   margin-bottom: 16px;
 
   color: var(--main-background-color);
-  display: flex;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -474,11 +470,7 @@ img {
 }
 .footer-social-links {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 16px;
-  padding: 0px;
-  margin: 0;
   list-style: none;
 }
 .footer-link {
@@ -530,7 +522,10 @@ img {
 .nav-btn:focus {
   background-color: var(--btn-background-color);
   color: var(--main-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .nav-btn {
   cursor: pointer;
 }
@@ -544,7 +539,10 @@ img {
   row-gap: 48px;
 }
 .work-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   width: calc((100% - 48px) / 3);
+  
 }
 .work-card:nth-child(3) {
   margin-right: 0;
@@ -552,8 +550,9 @@ img {
 
 .our-link .link {
   text-decoration: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .list {
   list-style-type: none;
 
