@@ -385,11 +385,12 @@ img {
 }
 /* секція лого-линк */
 .section-customers {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .customers {
   font-weight: 700;
-  margin-top: 120px;
+
   margin-bottom: 72px;
   text-align: center;
   font-size: 36px;
@@ -405,7 +406,7 @@ img {
   list-style: none;
 }
 .our-customers {
-  width: calc((100% - 96px) / 6);
+  width: calc((100% - 120px) / 6);
 }
 .our-customers last-child {
   margin-right: 0px;
@@ -522,6 +523,7 @@ img {
 .nav-btn:focus {
   background-color: var(--btn-background-color);
   color: var(--main-background-color);
+  border-color: var(--btn-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -539,20 +541,22 @@ img {
   row-gap: 48px;
 }
 .work-card {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   width: calc((100% - 48px) / 3);
-  
 }
+
 .work-card:nth-child(3) {
   margin-right: 0;
+}
+.work-card:hover,
+.work-card:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .our-link .link {
   text-decoration: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .list {
   list-style-type: none;
 
