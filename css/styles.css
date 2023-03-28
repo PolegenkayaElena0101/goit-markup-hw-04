@@ -547,14 +547,14 @@ img {
 .work-card:nth-child(3) {
   margin-right: 0;
 }
-.work-card:hover,
-.work-card:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .our-link .link {
   text-decoration: none;
+}
+.our-link .link:hover,
+.our-link .link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list {
